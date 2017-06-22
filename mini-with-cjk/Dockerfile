@@ -16,6 +16,6 @@ RUN apk add --update --no-cache gcc g++ make openjdk8-jre ruby-dev ruby ruby-nok
 WORKDIR /documents
 VOLUME /documents
 
-COPY ../entrypoint.sh /bin/entrypoint.sh
+COPY entrypoint.sh /bin/entrypoint.sh
 
 ENTRYPOINT ["/bin/entrypoint.sh"]
