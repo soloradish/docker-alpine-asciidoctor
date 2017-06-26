@@ -2,7 +2,7 @@ FROM alpine:3.3
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 
-RUN apk add --update --no-cache gcc g++ make openjdk8-jre ruby-dev ruby ruby-nokogiri ruby-json asciidoctor ttf-dejavu bash && \
+RUN apk add --update --no-cache gcc g++ make openjdk8-jre ruby-dev ruby ruby-nokogiri ruby-json asciidoctor ttf-dejavu bash python && \
     gem install --no-ri --no-rdoc asciidoctor-diagram && \
     gem install --no-ri --no-rdoc asciidoctor-pdf --pre && \
     gem install --no-ri --no-rdoc asciidoctor-epub3 --pre && \
